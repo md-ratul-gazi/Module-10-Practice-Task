@@ -38,6 +38,7 @@ nav h1 {
   color: var(--primary-text-color);
   font-size: 1.5rem;
   font-weight: 700;
+  width: 243px;
 }
 nav ul li a {
   color: var(--primary-text-color);
@@ -60,9 +61,8 @@ nav ul li a {
   width: 36.375rem;
   color: var(--primary-text-color);
   font-size: 3.25rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: 70px; /* 134.615% */
+  line-height: 70px;
 }
 .banner-description {
   width: 505px;
@@ -79,6 +79,9 @@ nav ul li a {
   border-radius: var(--btn-border-radius);
   font-size: 1rem;
   font-weight: 700;
+}
+span {
+  margin-left: 5px;
 }
 /* Banner content style ends here */
 
@@ -98,3 +101,57 @@ nav ul li a {
 /* Banner section style ends here */
 
 /* Header section style ends here */
+
+/* RESPONSIVE STYLE HERE */
+@media screen and (max-width: 576px) {
+  /* Nav responsive */
+  nav {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 35px;
+  }
+  nav h1 {
+    margin-bottom: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  /* Nav responsive */
+
+  /* Banner responsive */
+  .banner {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding: 30px;
+  }
+  .banner-image {
+    width: 100%;
+    background-size: 100%;
+  }
+  .banner-image img {
+    width: 100%;
+  }
+  /* .banner-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } */
+  .banner-title {
+    width: 100%;
+    font-size: 28px;
+    line-height: normal;
+  }
+  .banner-description {
+    width: 100%;
+    font-size: 14px;
+    margin: 15px 0;
+  }
+  /* Banner responsive */
+}
+/* RESPONSIVE STYLE HERE */
