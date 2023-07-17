@@ -2,5 +2,42 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+:root {
+  --primary-text-color: #3a3a3a;
 }
 /* All shared code is here */
+
+/* Header section style starts here */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 87px 120px 0px 120px;
+}
+/* Nav section style starts here */
+nav ul {
+  display: flex;
+  gap: 34px;
+}
+nav h1 {
+  color: var(--primary-text-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+nav ul li a {
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* Nav section style ends here */
+
+/* Header section style ends here */
