@@ -13,7 +13,13 @@ a {
 }
 :root {
   --primary-text-color: #3a3a3a;
+  --btn-color: #e02c6d;
+  --btn-border-radius: 2.5rem;
+  --btn-background-color: #e02c6d;
+  --btn-padding: 10px 24px;
+  --btn-color: #fff;
 }
+
 /* All shared code is here */
 
 /* Header section style starts here */
@@ -39,5 +45,56 @@ nav ul li a {
   font-weight: 600;
 }
 /* Nav section style ends here */
+
+/* Banner section style starts here */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 132px 69px 120px;
+  gap: 131px;
+}
+
+/* Banner content style start here */
+.banner-title {
+  width: 36.375rem;
+  color: var(--primary-text-color);
+  font-size: 3.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px; /* 134.615% */
+}
+.banner-description {
+  width: 505px;
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.banner-btn {
+  padding: var(--btn-padding);
+  color: var(--btn-color);
+  background-color: var(--btn-background-color);
+  border: none;
+  border-radius: var(--btn-border-radius);
+  font-size: 1rem;
+  font-weight: 700;
+}
+/* Banner content style ends here */
+
+/* Banner image style starts here */
+.banner-image {
+  width: 29.6rem;
+  background-image: url("../images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner-img1 {
+  margin: 30px 33px 30px 2px;
+  width: 500px;
+}
+
+/* Banner image style ends here */
+/* Banner section style ends here */
 
 /* Header section style ends here */
